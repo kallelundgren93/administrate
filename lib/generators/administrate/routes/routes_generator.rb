@@ -6,7 +6,7 @@ module Administrate
   module Generators
     class RoutesGenerator < Rails::Generators::Base
       source_root File.expand_path("../templates", __FILE__)
-      class_option :namespace, type: :string, default: "admin"
+      class_option :namespace, type: :string, default: "super_admin"
 
       def insert_dashboard_routes
         if should_route_dashboard?

@@ -8,7 +8,7 @@ describe Administrate::Namespace do
         namespace = Administrate::Namespace.new(:admin)
 
         Rails.application.routes.draw do
-          namespace(:admin) { resources :customers }
+          namespace(:super_admin) { resources :customers }
           resources :administrators
         end
 
